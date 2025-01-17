@@ -19,7 +19,7 @@ void swap(int *pa, int *pb){
     int temp;
     temp =*pa;
     *pa =*pb;
-    *pa = temp;
+    *pb = temp;
     printf("a: %d, b: %d\n",*pa,*pb);
 
 }
@@ -27,6 +27,7 @@ void swap(int *pa, int *pb){
 int main(){
 
     int a =10, b =99;
+    printf("a: %d, b: %d\n",a,b);
 
     // 프로그래밍 언어에서 함수가 외부로부터 데이터를 얻는 방법 2가지
     //  1. Call-by-value(값에 의한 호출)
@@ -38,6 +39,4 @@ int main(){
     // ※ C언어는 Call-by-value이기 때문에 swap(a,b)의 a와 b가 복사해서 
     //    전달되기 때문에 main() 함수의 원본 a, b값은 영향을 받지 않음
     swap(&a,&b);
-    printf("a: %d, b: %d\n",a,b);
-
 }
