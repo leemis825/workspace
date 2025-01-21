@@ -4,6 +4,8 @@
 int mp(int base, int exp) {
     int res = 1;
     for(int i=0; i < exp; i++){
+        // i = 0 부터
+        // i = 9 까지 반복 
         res = res * base;
     }
 
